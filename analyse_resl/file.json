@@ -1,0 +1,30 @@
+reasoning="The vendor is identified as 'H.T.K masonry' from the Contractor field. The date is given as 12/17/24, which corresponds to 2024-12-17 in YYYY-MM-DD format. The Number column shows 2 coreman and 2 bricklayers, totaling 4 workers. The Total Manhours Worked is printed as 32, so we use that for TotalWorkHr." Vendor='H.T.K masonry' Date='2024-12-17' TotalWorkers=4 TotalWorkHr=32.0
+
+
+ParsedChatCompletion[TypeVar
+](id='chatcmpl-DSLQKnf9Y2KLlS0XE5uQfb5i1wRzF', choices=[ParsedChoice[TypeVar
+    ](finish_reason='stop', index=0, logprobs=None, message=ParsedChatCompletionMessage[TypeVar
+    ](content='{
+        "reasoning":"The vendor is the contractor company name, which is handwritten as \'H.T.K masonry\'. The date is given as 12/17/24, which corresponds to 2024-12-17 in YYYY-MM-DD format. The total workers are the sum of the \'Number\' column: 2 (Foreman) + 2 (Bricklayers) = 4. The total manhours worked is printed as 32, so we use that value for TotalWorkHr.",
+        "Vendor": "H.T.K masonry",
+        "Date": "2024-12-17",
+        "TotalWorkers": 4,
+        "TotalWorkHr": 32
+    }', refusal=None, role='assistant', annotations=[], audio=None, function_call=None, tool_calls=None, parsed=DailyReport(reasoning="The vendor is the contractor company name, which is handwritten as 'H.T.K masonry'. The date is given as 12/17/24, which corresponds to 2024-12-17 in YYYY-MM-DD format. The total workers are the sum of the 'Number' column: 2 (Foreman) + 2 (Bricklayers) = 4. The total manhours worked is printed as 32, so we use that value for TotalWorkHr.", Vendor='H.T.K masonry', Date='2024-12-17', TotalWorkers=4, TotalWorkHr=32.0)), content_filter_results={'hate': {'filtered': False, 'severity': 'safe'
+        }, 'protected_material_code': {'filtered': False, 'detected': False
+        }, 'protected_material_text': {'filtered': False, 'detected': False
+        }, 'self_harm': {'filtered': False, 'severity': 'safe'
+        }, 'sexual': {'filtered': False, 'severity': 'safe'
+        }, 'violence': {'filtered': False, 'severity': 'safe'
+        }
+    })
+], created=1775647908, model='gpt-4.1-mini-2025-04-14', object='chat.completion', service_tier=None, system_fingerprint='fp_b6f445fc1c', usage=CompletionUsage(completion_tokens=129, prompt_tokens=880, total_tokens=1009, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=0, audio_tokens=0, reasoning_tokens=0, rejected_prediction_tokens=0), prompt_tokens_details=PromptTokensDetails(audio_tokens=0, cached_tokens=0)), prompt_filter_results=[
+    {'prompt_index': 0, 'content_filter_results': {'hate': {'filtered': False, 'severity': 'safe'
+            }, 'jailbreak': {'filtered': False, 'detected': False
+            }, 'self_harm': {'filtered': False, 'severity': 'safe'
+            }, 'sexual': {'filtered': False, 'severity': 'safe'
+            }, 'violence': {'filtered': False, 'severity': 'safe'
+            }
+        }
+    }
+])

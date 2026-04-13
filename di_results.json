@@ -1,0 +1,809 @@
+{
+  "results": [
+    {
+      "file": "1.20.25-1.24.25.pdf",
+      "format": ".pdf",
+      "pages": 2,
+      "reports": [
+        {
+          "Vendor": "WALLS-CEILINGS",
+          "Date": "2025-01-20",
+          "TotalWorkers": 32,
+          "TotalWorkHr": 256.0
+        },
+        {
+          "Vendor": "WALLS-CEILINGS",
+          "Date": "2025-01-21",
+          "TotalWorkers": 32,
+          "TotalWorkHr": 256.0
+        }
+      ],
+      "reasoning": [
+        "The first page shows the contractor as WALLS-CEILINGS, date as 1-20-25 which corresponds to 2025-01-20. The total workers are the sum of Number column: 2 (Foremans) + 24 (Carpenters) + 6 (Finishers) = 32. The Total Manhours Worked is given as 256, so we use that as TotalWorkHr.",
+        "The second page also shows the contractor as WALLS-CEILINGS, date as 1-21-25 which corresponds to 2025-01-21. The total workers are the sum of Number column: 2 (Foremans) + 24 (Carpenters) + 6 (Finishers) = 32. The Total Manhours Worked is given as 256, so we use that as TotalWorkHr."
+      ],
+      "tokens": {
+        "input_tokens": 925,
+        "output_tokens": 249,
+        "total_tokens": 1174
+      },
+      "cost": {
+        "llm_cost_usd": 0.000768,
+        "di_cost_usd": 0.02,
+        "total_cost_usd": 0.020768
+      },
+      "error": null
+    },
+    {
+      "file": "2.17.25-2.18.25 Dailys.pdf",
+      "format": ".pdf",
+      "pages": 2,
+      "reports": [
+        {
+          "Vendor": "CSC",
+          "Date": "2025-02-17",
+          "TotalWorkers": 16,
+          "TotalWorkHr": 1800.0
+        },
+        {
+          "Vendor": "CSC",
+          "Date": "2025-02-18",
+          "TotalWorkers": 48,
+          "TotalWorkHr": 48.0
+        }
+      ],
+      "reasoning": [
+        "Page 1: The date is given as 2/17/225, which likely means 2025-02-17 (year > 2000). Vendor is CSC as stated. Workers onsite are Craig (8 hours), Mike (0), Zack (0), Aiden (8). Total workers = 8 + 0 + 0 + 8 = 16. Total manhours worked is printed as 1800, which is likely a typo or error given the hours and workers. Since total manhours is filled, we use 1800 as TotalWorkHr.",
+        "Page 2: The date is 2-18.25, interpreted as 2025-02-18. Vendor is CSC. Workers onsite: Tom (8), Craig (8), Armando (8), Aiden (8), Mike (8), Zack (8). Total workers = 8*6 = 48. Total manhours worked is printed as 48, which matches sum of hours * workers (6 workers * 8 hours = 48). Use printed total manhours 48 as TotalWorkHr."
+      ],
+      "tokens": {
+        "input_tokens": 786,
+        "output_tokens": 288,
+        "total_tokens": 1074
+      },
+      "cost": {
+        "llm_cost_usd": 0.000775,
+        "di_cost_usd": 0.02,
+        "total_cost_usd": 0.020775
+      },
+      "error": null
+    },
+    {
+      "file": "24.12.16 HJK Dalies.pdf",
+      "format": ".pdf",
+      "pages": 2,
+      "reports": [
+        {
+          "Vendor": "H.J.K masonry",
+          "Date": "2024-12-17",
+          "TotalWorkers": 4,
+          "TotalWorkHr": 32.0
+        },
+        {
+          "Vendor": "H. J.K masonry",
+          "Date": "2024-12-18",
+          "TotalWorkers": 9,
+          "TotalWorkHr": 24.0
+        }
+      ],
+      "reasoning": [
+        "Page 1 report is from contractor 'H.J.K masonry' dated 12.17.24. The workers are 2 Foremen and 2 Bricklayers, total workers = 4. Total Manhours Worked is given as 32, so use that as TotalWorkHr.",
+        "Page 2 report is from contractor 'H. J.K masonry' dated 12.18.24. Workers are 1 Foreman, 1 Bricklayer, and 7 Operators, total workers = 9. Total Manhours Worked is given as 24, so use that as TotalWorkHr."
+      ],
+      "tokens": {
+        "input_tokens": 823,
+        "output_tokens": 188,
+        "total_tokens": 1011
+      },
+      "cost": {
+        "llm_cost_usd": 0.00063,
+        "di_cost_usd": 0.02,
+        "total_cost_usd": 0.02063
+      },
+      "error": null
+    },
+    {
+      "file": "3.12.26 - Daily Report.pdf",
+      "format": ".pdf",
+      "pages": 2,
+      "reports": [
+        {
+          "Vendor": "Rogers Electric",
+          "Date": "2026-03-11",
+          "TotalWorkers": 15,
+          "TotalWorkHr": 120.0
+        }
+      ],
+      "reasoning": [
+        "The vendor is identified as Rogers Electric from the manpower section. The date is extracted from the Daily Log date: Wednesday 3/11/2026, which corresponds to 2026-03-11. TotalWorkers is the sum of the 'Workers #' column: 2 + 7 + 2 + 2 + 2 = 15. TotalWorkHr is given as 120.0 Total Hours in the manpower summary, so we use that value instead of calculating hours x workers."
+      ],
+      "tokens": {
+        "input_tokens": 1167,
+        "output_tokens": 139,
+        "total_tokens": 1306
+      },
+      "cost": {
+        "llm_cost_usd": 0.000689,
+        "di_cost_usd": 0.02,
+        "total_cost_usd": 0.020689
+      },
+      "error": null
+    },
+    {
+      "file": "CCC - WT Daily UD ECUUP (4).pdf",
+      "format": ".pdf",
+      "pages": 1,
+      "reports": [
+        {
+          "Vendor": "Corrado",
+          "Date": "2023-10-02",
+          "TotalWorkers": 5,
+          "TotalWorkHr": 33.0
+        }
+      ],
+      "reasoning": [
+        "The vendor is 'Corrado' as indicated under Contractor. The date is given as 10-2-23, which corresponds to 2023-10-02 in YYYY-MM-DD format. TotalWorkers is the sum of the Number column across all rows on the page. The workers listed are Greg Mathena (Foreman), Bylkin (hours 1 but no number column, assuming 1 worker), Bill King (Operator), Nathien Gonzoles (Laborer), Rafial, and others with no hours or classification listed. The hours worked are 8, 1, 8, 8, 8 respectively for the first five names. Since the Number column is not explicitly given, we assume each name corresponds to 1 worker. TotalWorkers = 5. TotalWorkHr is not given as Total Manhours, so we sum hours x workers: (8+1+8+8+8) = 33 hours."
+      ],
+      "tokens": {
+        "input_tokens": 532,
+        "output_tokens": 227,
+        "total_tokens": 759
+      },
+      "cost": {
+        "llm_cost_usd": 0.000576,
+        "di_cost_usd": 0.01,
+        "total_cost_usd": 0.010576
+      },
+      "error": null
+    },
+    {
+      "file": "Daily Job Diary 1-23-25.pdf",
+      "format": ".pdf",
+      "pages": 1,
+      "reports": [
+        {
+          "Vendor": "N NICKLE ELECTRICAL COMPANIES",
+          "Date": "2025-01-23",
+          "TotalWorkers": 5,
+          "TotalWorkHr": 48.0
+        }
+      ],
+      "reasoning": [
+        "The vendor is identified as 'N NICKLE ELECTRICAL COMPANIES' from the header. The date is given as 1/23/2025, which converts to 2025-01-23. The total number of men on the job is 5, which corresponds to TotalWorkers. The Man Hours Today is explicitly given as 48, so TotalWorkHr is 48. No other rows or number columns are present to sum, so we use the provided total man hours for the day."
+      ],
+      "tokens": {
+        "input_tokens": 664,
+        "output_tokens": 147,
+        "total_tokens": 811
+      },
+      "cost": {
+        "llm_cost_usd": 0.000501,
+        "di_cost_usd": 0.01,
+        "total_cost_usd": 0.010501
+      },
+      "error": null
+    },
+    {
+      "file": "Daily Log - 03-12-2026 - MIH Tower & CUP (1).pdf",
+      "format": ".pdf",
+      "pages": 2,
+      "reports": [
+        {
+          "Vendor": "ILWOLF CONTRACTORS, INC.",
+          "Date": "2026-03-12",
+          "TotalWorkers": 6,
+          "TotalWorkHr": 33.0
+        }
+      ],
+      "reasoning": [
+        "The vendor is identified as 'ILWOLF CONTRACTORS, INC.' from the header and contact information. The date is explicitly given as 03/12/2026, which converts to 2026-03-12. The number of workers is given as 'Manpower 6 men', so TotalWorkers is 6. Each employee worked 5.5 hours (05:30 Hrs), so total work hours is 6 workers * 5.5 hours = 33.0 hours. There is no printed 'Total Manhours' field filled, so we use the calculated sum."
+      ],
+      "tokens": {
+        "input_tokens": 665,
+        "output_tokens": 163,
+        "total_tokens": 828
+      },
+      "cost": {
+        "llm_cost_usd": 0.000527,
+        "di_cost_usd": 0.02,
+        "total_cost_usd": 0.020527
+      },
+      "error": null
+    },
+    {
+      "file": "DAILY REPORT NOVEN - Sub Example.pdf",
+      "format": ".pdf",
+      "pages": 1,
+      "reports": [
+        {
+          "Vendor": "Tirone Electric Data Inc.",
+          "Date": "2025-08-11",
+          "TotalWorkers": 5,
+          "TotalWorkHr": 40.0
+        }
+      ],
+      "reasoning": [
+        "The vendor is Tirone Electric Data Inc. The date is given as 8-11-25, which corresponds to 2025-08-11 (year > 2000). The workers listed are E Rivera, R Nortmann, Y Medina, Y Alvarez, M Navarrete, each working 8 hours. M Moya is off. Total workers = 5. Total work hours = sum of hours x workers = 5 workers * 8 hours = 40 hours. No printed total manhours found, so calculated total work hours used."
+      ],
+      "tokens": {
+        "input_tokens": 730,
+        "output_tokens": 152,
+        "total_tokens": 882
+      },
+      "cost": {
+        "llm_cost_usd": 0.000535,
+        "di_cost_usd": 0.01,
+        "total_cost_usd": 0.010535
+      },
+      "error": null
+    },
+    {
+      "file": "DR_12192025 (1).pdf",
+      "format": ".pdf",
+      "pages": 1,
+      "reports": [
+        {
+          "Vendor": "ELECTRICO INC.",
+          "Date": "2025-12-19",
+          "TotalWorkers": 7,
+          "TotalWorkHr": 53.5
+        }
+      ],
+      "reasoning": [
+        "The vendor is ELECTRICO INC. The date is given as 12/19/2025, which converts to 2025-12-19. The total workers are the sum of the 'Number' column from 1 to 7 (since only 7 workers are listed), which is 7. The total manhours worked is explicitly given as 53.5, so we use that instead of calculating hours x workers."
+      ],
+      "tokens": {
+        "input_tokens": 559,
+        "output_tokens": 128,
+        "total_tokens": 687
+      },
+      "cost": {
+        "llm_cost_usd": 0.000428,
+        "di_cost_usd": 0.01,
+        "total_cost_usd": 0.010428
+      },
+      "error": null
+    },
+    {
+      "file": "f39f9ee9-980d-47c2-a70a-87290fab69d0.pdf",
+      "format": ".pdf",
+      "pages": 2,
+      "reports": [
+        {
+          "Vendor": "itr ele",
+          "Date": "2026-03-12",
+          "TotalWorkers": 0,
+          "TotalWorkHr": 0.0
+        }
+      ],
+      "reasoning": [
+        "The document text indicates that the report is for the date March 12, 2026. The vendor is not explicitly mentioned, but the creator is 'itr ele', which likely stands for the electrical contractor providing service. The page 1 of 4 is the first page of the report. There is no table or number of workers or hours explicitly given on this page, so TotalWorkers and TotalWorkHr cannot be calculated from this page alone. Since the instruction is to extract one record per page, and this page has no worker or hour data, we assume zero workers and zero hours for this page."
+      ],
+      "tokens": {
+        "input_tokens": 691,
+        "output_tokens": 156,
+        "total_tokens": 847
+      },
+      "cost": {
+        "llm_cost_usd": 0.000526,
+        "di_cost_usd": 0.02,
+        "total_cost_usd": 0.020526
+      },
+      "error": null
+    },
+    {
+      "file": "GMV Sub Daily Report.pdf",
+      "format": ".pdf",
+      "pages": 2,
+      "reports": [
+        {
+          "Vendor": "Md fab",
+          "Date": "2025-09-17",
+          "TotalWorkers": 4,
+          "TotalWorkHr": 32.0
+        }
+      ],
+      "reasoning": [
+        "The page is a subcontractor daily report for Md fab dated 09-17-25. The year is given as 25, which likely means 2025 (year > 2000). The workers are Foreman (1) and Journeymen (3), total workers = 4. Hours are 8 each. Total manhours is not explicitly printed, so we calculate: (1+3)*8 = 32 hours."
+      ],
+      "tokens": {
+        "input_tokens": 710,
+        "output_tokens": 125,
+        "total_tokens": 835
+      },
+      "cost": {
+        "llm_cost_usd": 0.000484,
+        "di_cost_usd": 0.02,
+        "total_cost_usd": 0.020484
+      },
+      "error": null
+    },
+    {
+      "file": "HJK Masonry Daily Report 3_27_2025.pdf",
+      "format": ".pdf",
+      "pages": 1,
+      "reports": [
+        {
+          "Vendor": "HJK",
+          "Date": "2025-03-27",
+          "TotalWorkers": 3,
+          "TotalWorkHr": 12.0
+        }
+      ],
+      "reasoning": [
+        "The vendor is identified as 'HJK' from the 'Contractor' field. The date is given as 'March 27, 2025', which converts to '2025-03-27'. The number of workers is 1 (Foreman) + 1 (Bricklayer) + 1 (Labor) = 3 total workers. The man-hours worked are given as '2=6', which likely means 2 workers worked 6 hours each, but since the number of workers is 3, and the hours are not clearly summed, we use the 'Number of Man-hours worked' as 6 hours per worker times 2 workers = 12 hours. However, since the total workers is 3, and the hours are ambiguous, we sum hours x workers for all rows: Foreman (1 worker, hours not specified), Bricklayer (1 worker, hours not specified), Labor (1 worker, hours not specified). Since hours per classification are not specified except '2=6' which is ambiguous, and no printed total manhours is given, we assume total work hours as 6 (from '2=6') times 2 workers = 12. But since total workers is 3, and only 2 workers' hours are given, we take total work hours as 12. Therefore, TotalWorkers=3, TotalWorkHr=12."
+      ],
+      "tokens": {
+        "input_tokens": 460,
+        "output_tokens": 316,
+        "total_tokens": 776
+      },
+      "cost": {
+        "llm_cost_usd": 0.00069,
+        "di_cost_usd": 0.01,
+        "total_cost_usd": 0.01069
+      },
+      "error": null
+    },
+    {
+      "file": "img1.png",
+      "format": ".png",
+      "pages": 1,
+      "reports": [
+        {
+          "Vendor": "CSC",
+          "Date": "2025-02-17",
+          "TotalWorkers": 16,
+          "TotalWorkHr": 16.0
+        }
+      ],
+      "reasoning": [
+        "The document contains one page with a daily report. The vendor is identified as 'CSC'. The date is given as '2/17/925', which appears to be a typo or misprint. Since the year must be greater than 2000, the most reasonable correction is 2025-02-17. The Number column sums to 8 (Craig) + 0 (Mike) + 0 (Zack) + 8 (Aiden) = 16 total workers. The Total Manhours Worked field is present but not filled, so we calculate total work hours by summing hours worked multiplied by number of workers. However, the hours worked per worker are not clearly given per person, only 'Hours Worked' column with values 8, 0, 0, 8. Assuming these are hours per worker, total work hours = (8*1) + (0*1) + (0*1) + (8*1) = 16 hours. Therefore, TotalWorkHr is 16."
+      ],
+      "tokens": {
+        "input_tokens": 426,
+        "output_tokens": 244,
+        "total_tokens": 670
+      },
+      "cost": {
+        "llm_cost_usd": 0.000561,
+        "di_cost_usd": 0.01,
+        "total_cost_usd": 0.010561
+      },
+      "error": null
+    },
+    {
+      "file": "img10.png",
+      "format": ".png",
+      "pages": 1,
+      "reports": [
+        {
+          "Vendor": "Maryland Mechanical",
+          "Date": "2026-02-25",
+          "TotalWorkers": 3,
+          "TotalWorkHr": 0.0
+        }
+      ],
+      "reasoning": [
+        "The vendor is identified as 'Maryland Mechanical'. The date is given as 02/25/26, which corresponds to 2026-02-25 (year > 2000). The number of workers is summed from the 'Number of Workers' section: Md mech foreman 1, Md mech mechanic 1, Md mech apprentice 1, total 3 workers. There is no printed 'Total Manhours' field filled, so we cannot use that. No hours per worker are given, so we cannot calculate total work hours from hours x workers. Since no hours data is provided, total work hours cannot be calculated and is assumed to be 0 or missing. However, since the instructions say to use printed Total Manhours if filled, else sum hours x workers, and neither is available, total work hours is 0 by default."
+      ],
+      "tokens": {
+        "input_tokens": 596,
+        "output_tokens": 208,
+        "total_tokens": 804
+      },
+      "cost": {
+        "llm_cost_usd": 0.000571,
+        "di_cost_usd": 0.01,
+        "total_cost_usd": 0.010571
+      },
+      "error": null
+    },
+    {
+      "file": "img11.png",
+      "format": ".png",
+      "pages": 1,
+      "reports": [
+        {
+          "Vendor": "William R. Nash MECHANICAL CONTRACTORS",
+          "Date": "2024-08-01",
+          "TotalWorkers": 0,
+          "TotalWorkHr": 0.0
+        }
+      ],
+      "reasoning": [
+        "The text appears to be from a single page daily report. The vendor is identified as 'William R. Nash MECHANICAL CONTRACTORS' from the header. The date is not explicitly stated in a clear YYYY-MM-DD format, but the report number '24-008' suggests the date might be 2024-08 (August 2024). Since the year is always greater than 2000, we interpret '24' as 2024 and '008' as the day or report number. However, no explicit date is given, so we cannot confirm the exact date. TotalWorkers is the sum of the 'Number' column across all rows on the page, but the text does not provide clear tabular data or numbers for workers. Similarly, TotalWorkHr is to be taken from 'Total Manhours' if filled, else sum hours x workers, but no such data is present. Due to the lack of explicit numeric data, we cannot extract TotalWorkers or TotalWorkHr. Therefore, we provide the vendor and an approximate date, with TotalWorkers and TotalWorkHr as 0 due to missing data."
+      ],
+      "tokens": {
+        "input_tokens": 815,
+        "output_tokens": 268,
+        "total_tokens": 1083
+      },
+      "cost": {
+        "llm_cost_usd": 0.000755,
+        "di_cost_usd": 0.01,
+        "total_cost_usd": 0.010755
+      },
+      "error": null
+    },
+    {
+      "file": "img12.png",
+      "format": ".png",
+      "pages": 1,
+      "reports": [
+        {
+          "Vendor": "Prescicion concrete",
+          "Date": "2024-03-20",
+          "TotalWorkers": 5,
+          "TotalWorkHr": 0.0
+        }
+      ],
+      "reasoning": [
+        "The report is from one page. Vendor is 'Prescicion concrete' as stated under SUBCONTRACTOR NAME. Date is given as 03/20/24, which corresponds to 2024-03-20. TotalWorkers is the sum of the Number column; only Laborer has a quantity of 5, others are not specified or zero, so TotalWorkers=5. TotalWorkHr is not explicitly given as Total Manhours, so we calculate by summing hours x workers. Hours are given as 'BH' which is unclear, so no numeric hours are provided. Since no numeric hours are given, TotalWorkHr cannot be calculated and is assumed 0."
+      ],
+      "tokens": {
+        "input_tokens": 595,
+        "output_tokens": 174,
+        "total_tokens": 769
+      },
+      "cost": {
+        "llm_cost_usd": 0.000516,
+        "di_cost_usd": 0.01,
+        "total_cost_usd": 0.010516
+      },
+      "error": null
+    },
+    {
+      "file": "img13.png",
+      "format": ".png",
+      "pages": 1,
+      "reports": [
+        {
+          "Vendor": "S.M.I.",
+          "Date": "2024-12-06",
+          "TotalWorkers": 80,
+          "TotalWorkHr": 0.0
+        }
+      ],
+      "reasoning": [
+        "The page contains a daily report dated 12/6/24, which corresponds to 2024-12-06 (assuming MM/DD/YY format). The vendor is S.M.I. The number of workers is summed from the 'Number' column: Carpenter (1), Electrician (0), Insulator (3), Plumber (15), Pipe Fitter (3), Sheet Metal (15), Truck Drivers (43). TotalWorkers = 1+0+3+15+3+15+43 = 80. Total Manhours is not explicitly given, so we calculate TotalWorkHr by summing hours x workers. However, hours per worker are not provided, so we cannot calculate total work hours from hours x workers. Since Total Manhours is not filled, and no hours per worker are given, TotalWorkHr cannot be calculated and is left as 0."
+      ],
+      "tokens": {
+        "input_tokens": 534,
+        "output_tokens": 214,
+        "total_tokens": 748
+      },
+      "cost": {
+        "llm_cost_usd": 0.000556,
+        "di_cost_usd": 0.01,
+        "total_cost_usd": 0.010556
+      },
+      "error": null
+    },
+    {
+      "file": "img2.png",
+      "format": ".png",
+      "pages": 1,
+      "reports": [
+        {
+          "Vendor": "H.J.K masonry",
+          "Date": "2024-12-17",
+          "TotalWorkers": 4,
+          "TotalWorkHr": 32.0
+        }
+      ],
+      "reasoning": [
+        "The report is from one page. The vendor is 'H.J.K masonry' as stated under Contractor. The date is given as 12.17.24, which corresponds to 2024-12-17. TotalWorkers is the sum of the Number column: 2 (Foreman) + 2 (Bricklayers) = 4. TotalWorkHr is given as Total Manhours Worked: 32, so we use that value instead of calculating hours x workers."
+      ],
+      "tokens": {
+        "input_tokens": 441,
+        "output_tokens": 133,
+        "total_tokens": 574
+      },
+      "cost": {
+        "llm_cost_usd": 0.000389,
+        "di_cost_usd": 0.01,
+        "total_cost_usd": 0.010389
+      },
+      "error": null
+    },
+    {
+      "file": "img3.png",
+      "format": ".png",
+      "pages": 1,
+      "reports": [
+        {
+          "Vendor": "Corrado",
+          "Date": "2023-10-02",
+          "TotalWorkers": 5,
+          "TotalWorkHr": 33.0
+        }
+      ],
+      "reasoning": [
+        "The vendor is 'Corrado' as indicated under Contractor. The date is given as 10-2-23, which corresponds to 2023-10-02 in YYYY-MM-DD format. The workers listed have hours worked as follows: Greg Mathena (8), Bill King (8), Nathien Gonzoles (8), Rafial (8), and Billy (1). Total workers is the sum of the 'Number' column, but since no explicit 'Number' column is given, we count the number of workers listed, which is 5. Total work hours is not explicitly given as 'Total Manhours', so we sum hours worked: 8+8+8+8+1=33 hours. Since the number of workers is 5, total work hours is 33 (sum of hours worked)."
+      ],
+      "tokens": {
+        "input_tokens": 452,
+        "output_tokens": 202,
+        "total_tokens": 654
+      },
+      "cost": {
+        "llm_cost_usd": 0.000504,
+        "di_cost_usd": 0.01,
+        "total_cost_usd": 0.010504
+      },
+      "error": null
+    },
+    {
+      "file": "img4.png",
+      "format": ".png",
+      "pages": 1,
+      "reports": [
+        {
+          "Vendor": "N NICKLE ELECTRICAL COMPANIES",
+          "Date": "2025-01-23",
+          "TotalWorkers": 5,
+          "TotalWorkHr": 48.0
+        }
+      ],
+      "reasoning": [
+        "The vendor is identified as 'N NICKLE ELECTRICAL COMPANIES' from the header. The date is given as 1/23/2025, which converts to 2025-01-23. The total number of men on the job is 5, which corresponds to TotalWorkers. The Man Hours Today is given as 48, which is used as TotalWorkHr since it is filled. Therefore, the extracted data is: Vendor: N NICKLE ELECTRICAL COMPANIES, Date: 2025-01-23, TotalWorkers: 5, TotalWorkHr: 48."
+      ],
+      "tokens": {
+        "input_tokens": 654,
+        "output_tokens": 170,
+        "total_tokens": 824
+      },
+      "cost": {
+        "llm_cost_usd": 0.000534,
+        "di_cost_usd": 0.01,
+        "total_cost_usd": 0.010534
+      },
+      "error": null
+    },
+    {
+      "file": "img5.png",
+      "format": ".png",
+      "pages": 1,
+      "reports": [
+        {
+          "Vendor": "LWOLF CONTRACTORS, INC.",
+          "Date": "2026-03-12",
+          "TotalWorkers": 6,
+          "TotalWorkHr": 33.0
+        }
+      ],
+      "reasoning": [
+        "The vendor is identified as LWOLF CONTRACTORS, INC. The date is explicitly mentioned as 03/12/2026, which corresponds to 2026-03-12. The number of workers can be counted from the employee list: Travis Head, Jamie Bridgeman, Clayton Cooper, Antwon Fuller, John Hancock Jr., Robert Walker, totaling 6 workers. Each worked 5.5 hours (5:30 Hrs). Total work hours is calculated as 6 workers * 5.5 hours = 33.0 hours. There is no printed total manhours, so we use the calculated total work hours."
+      ],
+      "tokens": {
+        "input_tokens": 579,
+        "output_tokens": 169,
+        "total_tokens": 748
+      },
+      "cost": {
+        "llm_cost_usd": 0.000502,
+        "di_cost_usd": 0.01,
+        "total_cost_usd": 0.010502
+      },
+      "error": null
+    },
+    {
+      "file": "img6.png",
+      "format": ".png",
+      "pages": 1,
+      "reports": [
+        {
+          "Vendor": "Tirone Electric, Inc.",
+          "Date": "2025-08-11",
+          "TotalWorkers": 0,
+          "TotalWorkHr": 0.0
+        }
+      ],
+      "reasoning": [
+        "The document text appears to be a contractor daily work report from Tirone Electric, Inc., as indicated by the header. The date mentioned is '8-11-25', which likely corresponds to 2025-08-11 (assuming MM-DD-YY format and year > 2000). There is no explicit 'Number' column or detailed rows with workers and hours, nor is there a printed 'Total Manhours' field filled. Due to lack of detailed data on workers and hours, TotalWorkers and TotalWorkHr cannot be accurately summed or calculated from the given text. Therefore, TotalWorkers and TotalWorkHr are set to 0 as no data is available."
+      ],
+      "tokens": {
+        "input_tokens": 588,
+        "output_tokens": 174,
+        "total_tokens": 762
+      },
+      "cost": {
+        "llm_cost_usd": 0.000514,
+        "di_cost_usd": 0.01,
+        "total_cost_usd": 0.010514
+      },
+      "error": null
+    },
+    {
+      "file": "img7.png",
+      "format": ".png",
+      "pages": 1,
+      "reports": [
+        {
+          "Vendor": "ELECTRICO INC.",
+          "Date": "2025-12-19",
+          "TotalWorkers": 8,
+          "TotalWorkHr": 53.5
+        }
+      ],
+      "reasoning": [
+        "The vendor is ELECTRICO INC. The date is given as 12/19/2025, which converts to 2025-12-19. The total workers is the sum of the 'Number' column which lists 8 workers (numbers 1 to 8, with some having 'B' for hours but still counted as workers). Counting the workers listed: 1,2,3,4,5,6,7,8 = 8 workers. Total man hours worked is given as 53.5, so we use that as TotalWorkHr."
+      ],
+      "tokens": {
+        "input_tokens": 567,
+        "output_tokens": 157,
+        "total_tokens": 724
+      },
+      "cost": {
+        "llm_cost_usd": 0.000478,
+        "di_cost_usd": 0.01,
+        "total_cost_usd": 0.010478
+      },
+      "error": null
+    },
+    {
+      "file": "img8.png",
+      "format": ".png",
+      "pages": 1,
+      "reports": [
+        {
+          "Vendor": "Md fab",
+          "Date": "2025-09-17",
+          "TotalWorkers": 4,
+          "TotalWorkHr": 32.0
+        }
+      ],
+      "reasoning": [
+        "The page contains a single daily report for subcontractor 'Md fab'. The date is given as '09-17-25', which corresponds to 2025-09-17 (year > 2000). The workers are listed as 1 Foreman, 3 Journeymen, and no other workers. TotalWorkers is 1 + 3 = 4. Hours worked are 8 hours each. TotalWorkHr is calculated as sum of (workers * hours): (1*8) + (3*8) = 8 + 24 = 32 hours. No printed total manhours is provided, so calculation is used."
+      ],
+      "tokens": {
+        "input_tokens": 602,
+        "output_tokens": 167,
+        "total_tokens": 769
+      },
+      "cost": {
+        "llm_cost_usd": 0.000508,
+        "di_cost_usd": 0.01,
+        "total_cost_usd": 0.010508
+      },
+      "error": null
+    },
+    {
+      "file": "img9.png",
+      "format": ".png",
+      "pages": 1,
+      "reports": [
+        {
+          "Vendor": "HJK",
+          "Date": "",
+          "TotalWorkers": 2,
+          "TotalWorkHr": 12.0
+        }
+      ],
+      "reasoning": [
+        "The document contains one page with a single daily report. The contractor company name (Vendor) is 'HJK'. The date is not explicitly mentioned in the text, so it cannot be extracted. The total number of workers is the sum of the 'No.' column: Foreman (1) + Bricklayer (1) + Labor (not specified, assumed 0) = 2 workers. The total man-hours worked are given as '2=6', which seems to be a typographical error or unclear. Since no clear total man-hours are provided, we calculate total work hours by summing hours x workers. However, hours per classification are not clearly given. The only number resembling man-hours is '2=6', which is ambiguous. Assuming '2=6' means 2 workers worked 6 hours each, total work hours = 2 * 6 = 12. Since the labor number is missing, we only consider Foreman and Bricklayer. Therefore, TotalWorkers = 2, TotalWorkHr = 12. Date is missing and cannot be extracted."
+      ],
+      "tokens": {
+        "input_tokens": 376,
+        "output_tokens": 246,
+        "total_tokens": 622
+      },
+      "cost": {
+        "llm_cost_usd": 0.000544,
+        "di_cost_usd": 0.01,
+        "total_cost_usd": 0.010544
+      },
+      "error": null
+    },
+    {
+      "file": "MMSI Daily.pdf",
+      "format": ".pdf",
+      "pages": 1,
+      "reports": [
+        {
+          "Vendor": "Maryland Mechanical",
+          "Date": "2026-02-25",
+          "TotalWorkers": 3,
+          "TotalWorkHr": 0.0
+        }
+      ],
+      "reasoning": [
+        "The vendor is identified as 'Maryland Mechanical'. The date is given as 02/25/26, which corresponds to 2026-02-25 (year > 2000). The number of workers are 1 foreman + 1 mechanic + 1 apprentice = 3 total workers. There is no printed total manhours, so total work hours is calculated by summing hours x workers. However, no hours per worker are given, and no equipment hours are listed (N/A). Since no hours are specified, total work hours cannot be calculated from hours x workers, so it is assumed to be 0 or not provided. Therefore, TotalWorkHr is 0."
+      ],
+      "tokens": {
+        "input_tokens": 592,
+        "output_tokens": 175,
+        "total_tokens": 767
+      },
+      "cost": {
+        "llm_cost_usd": 0.000517,
+        "di_cost_usd": 0.01,
+        "total_cost_usd": 0.010517
+      },
+      "error": null
+    },
+    {
+      "file": "Nash Daily 6.25.25.pdf",
+      "format": ".pdf",
+      "pages": 2,
+      "reports": [
+        {
+          "Vendor": "William R. Nash MECHANICAL CONTRACTORS",
+          "Date": "2025-06-25",
+          "TotalWorkers": 3,
+          "TotalWorkHr": 0.0
+        }
+      ],
+      "reasoning": [
+        "The document contains one daily report dated 2025-06-25 for the project 24-008 NOVEN QC Lab & Office Building. The vendor is William R. Nash MECHANICAL CONTRACTORS as indicated under the general information section. The staffing information lists 1 Foreman and 2 Plumbers, totaling 3 workers. No other workers are listed. There is no printed total manhours, so total work hours are calculated by summing hours x workers. However, the hours per worker are not explicitly given, so we cannot calculate total work hours from hours x workers. Since no total manhours are printed, and no hours per worker are given, total work hours cannot be determined from the data provided. Therefore, total work hours is left as 0.0 as no data is available."
+      ],
+      "tokens": {
+        "input_tokens": 913,
+        "output_tokens": 206,
+        "total_tokens": 1119
+      },
+      "cost": {
+        "llm_cost_usd": 0.000695,
+        "di_cost_usd": 0.02,
+        "total_cost_usd": 0.020695
+      },
+      "error": null
+    },
+    {
+      "file": "Sinai daily 12-6-24.pdf",
+      "format": ".pdf",
+      "pages": 1,
+      "reports": [
+        {
+          "Vendor": "S.M.I.",
+          "Date": "2024-12-06",
+          "TotalWorkers": 43,
+          "TotalWorkHr": 0.0
+        }
+      ],
+      "reasoning": [
+        "The report is from a single page with date 12/6/24, which corresponds to 2024-12-06 (assuming MM/DD/YY format). The vendor is S.M.I. as indicated under CONTRACTOR. The total workers are summed from the workforce numbers: Superintendent 1 + Insulator 3 + Plumbers 15 + Pipe Fitters 3 + Sheet Metal 15 + Apprentice 6 = 43 total workers. There is no printed Total Manhours, and no hours per worker given, so TotalWorkHr cannot be calculated from hours x workers. Since no hours are provided, TotalWorkHr is left as 0 or unknown, but per instructions, we use printed Total Manhours if filled, else sum hours x workers. Here, no hours info is given, so TotalWorkHr is 0."
+      ],
+      "tokens": {
+        "input_tokens": 528,
+        "output_tokens": 205,
+        "total_tokens": 733
+      },
+      "cost": {
+        "llm_cost_usd": 0.000539,
+        "di_cost_usd": 0.01,
+        "total_cost_usd": 0.010539
+      },
+      "error": null
+    },
+    {
+      "file": "Subcontractor Daily Report 2023-PTP.pdf",
+      "format": ".pdf",
+      "pages": 2,
+      "reports": [
+        {
+          "Vendor": "Prescicion concrete",
+          "Date": "2024-03-20",
+          "TotalWorkers": 6,
+          "TotalWorkHr": 48.0
+        }
+      ],
+      "reasoning": [
+        "The vendor is identified as 'Prescicion concrete' from the SUBCONTRACTOR NAME field. The date is given as 03/20/24, which corresponds to 2024-03-20. The workers are listed under RESOURCES: Foreman (1 worker) and Laborer (5 workers), totaling 6 workers. The hours are 8 hours each. TotalWorkHr is not explicitly given as 'Total Manhours', so we calculate as (1+5)*8 = 48 hours."
+      ],
+      "tokens": {
+        "input_tokens": 2182,
+        "output_tokens": 141,
+        "total_tokens": 2323
+      },
+      "cost": {
+        "llm_cost_usd": 0.001098,
+        "di_cost_usd": 0.02,
+        "total_cost_usd": 0.021098
+      },
+      "error": null
+    }
+  ],
+  "errors": []
+}

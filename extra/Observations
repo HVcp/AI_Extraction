@@ -1,0 +1,84 @@
+Document Type          Recommended Approach    Why
+─────────────────────────────────────────────────────
+Handwritten forms      Vision direct           DI OCR fails on cursive/numbers
+Typed PDFs             DI + LLM                Cheaper, same accuracy
+Photos/JPGs            Vision direct           No other option
+Excel files            Pandas only             No AI needed
+
+
+MUST upgrade DI to S0  for multi-page production docs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Document Type          Use               Reason
+──────────────────────────────────────────────────────
+Handwritten forms      Vision direct     DI OCR fails on cursive
+Typed/digital PDFs     DI + LLM          3-5x cheaper, same accuracy
+Images (PNG/JPG)       Vision direct     No other option
+Excel                  Pandas            No AI needed
+
+
+
+Component,Scenario A: DI + GPT-5.1 (Text),Scenario B: GPT-5.1 (Vision),Scenario C: GPT-4.1-mini (Vision)
+Logic,DI Layout Model + Text LLM,Direct Vision Call,Direct Vision Call (Mini)
+DI Cost (Layout),$0.01 ($10 / 1k pages),$0.00,$0.00
+LLM Input Cost,$0.00125 (1k tokens),$0.00138 (1.1k tokens*),$0.00044 (1.1k tokens*)
+LLM Output Cost,$0.005 (500 tokens**),$0.005 (500 tokens**),$0.0008 (500 tokens**)
+Total Per Page,$0.01625,$0.00638,$0.00124
+Total Per 1k Pages,$16.25,$6.38,$1.24
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
